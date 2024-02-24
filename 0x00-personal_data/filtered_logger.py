@@ -36,7 +36,7 @@ def get_db() -> connection.MySQLConnection:
     """
     Connect to mysql server with environmental vars
     """
-    
+
     username = environ.get("PERSONAL_DATA_DB_USERNAME", "root")
     password = environ.get("PERSONAL_DATA_DB_PASSWORD", "")
     db_host = environ.get("PERSONAL_DATA_DB_HOST", "localhost")
